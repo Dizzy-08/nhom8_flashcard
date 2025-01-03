@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Edit Your Collection</h2>
+
+    <ul id="all-collection" class="user-function">
+    {% for deck in decks %}
+        <li class="deck">
+            <h3 class="deck-name">{{ deck.name }}</h3>
+            <hr>
+            <a href="{% url 'edit_deck' deck.id %}">Edit Deck</a> 
+            <ul>
+            {% for card in deck.card_set.all %}
+                <li>
+                    <div class="card-front">{{ card.front }}</div>  <div class="card-back">{{ card.back }}</div>
+                    <a href="{% url 'edit_card' card.id %}">Edit Card</a>  
+                    <a href="{% url 'delete_card' card.id %}">Delete Card</a>
+                </li>
+            {% endfor %}
+            </ul>
+            <a href="{% url 'add_card' deck.id %}">Add New Card</a>
+        </li>
+    {% endfor %}
+    </ul>
+
+    <hr>
+    <ul class="user-function">
+      <li><a href="{% url 'create_deck' %}">Create a New Deck</a></li>
+      <li><a href="{% url 'home' %}">Home</a></li>
+    <ul>
+{% endblock %}

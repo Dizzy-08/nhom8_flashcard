@@ -1,0 +1,92 @@
+* {
+  background-color: #dce0e8;
+  color: #4c4f69;
+  list-style: none;
+}
+
+.signup-login-container {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;sd
+  border: 4px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.tokens {
+  color: black;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  background-color: white;
+  background-color: #7287fd;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #8839ef;
+}
+
+.user-function a {
+  color: white;
+  display: inline-block;
+  background-color: #7287fd;
+  text-decoration: none;
+  padding: 5px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 5px;
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+.user-function a:hover {
+    background-color: #8839ef;
+}
+
+#all-collection {
+  list-style: none;
+}
+
+.deck {
+  margin-bottom: 40px;
+}
+
+.card-front {
+  background-color: #179299;
+  display: inline-block;
+  padding: 5px;
+  color: white;
+  bor
+}
+
+.card-back {
+  background-color: #fe640b;
+  display: inline-block;
+  padding: 5px;
+  color: white;
+}
+
